@@ -1,0 +1,88 @@
+.collaboraters{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 40px;
+}
+.collaboraters>h1{
+    width: 60%;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    letter-spacing: 0.07;
+}
+.collaboraters>h1>span{
+    color: rgb(156, 88, 219);
+}
+.collaboraters-container{
+    display: flex;
+    gap: 40px;
+    position: relative;
+}
+.collaborater{
+    align-items: center;
+    display: flex;
+    border: 1px solid rgb(36, 36, 59);
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px 10px;
+    width: 250px;
+    animation: move 50s linear infinite;
+}
+.collaborater-img{
+    width: 90px; 
+    height: 90px;
+    border-radius: 100%;
+    background-color: aqua;
+    background-image: url(../../Assets/Images/harryImg.jpeg);
+    background-size: cover;
+    
+}
+.collaborater-info{
+    padding: 6px 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+.collaborater-info>p{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+.collaborater-info>span{
+    color: rgb(104, 115, 230);
+}
+
+
+
+
+@keyframes move {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-500%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .collaboraters>h1{
+        font-size: 8vw;
+        width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .collaboraters{
+        padding: 40px 0;
+    }
+    .collaboraters>h1{
+        font-size: 9vw;
+    }
+  }
+

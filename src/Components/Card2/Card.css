@@ -1,0 +1,78 @@
+.card2{
+    width: 320px;
+    border: 1px solid rgb(34, 35, 51);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+.card2-cont{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+}
+.card2-cont>.img-top{
+    background: linear-gradient(to right, green, blue);
+    border-radius: 100%;
+    padding: 2px 2px;
+}
+.card2-cont>.img-top>.img-mid{
+    padding: 6px 6px;
+    border-radius: 100%;
+    background-color: black;
+}
+.card2-cont>.img-top>.img-mid>.img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-size: cover;
+}
+.card2-cont>.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.card2-cont>.content>h1{
+    color: rgb(219, 219, 219);
+    font-size: 1.5rem;
+}
+.card2-cont>.content>span{
+    color: rgb(157, 157, 157);
+}
+.card2-cont>.content>p{
+    color: rgb(219, 219, 219);
+    text-align: center;
+}
+
+.card2>button{
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, rgb(51, 244, 51), rgb(244, 247, 52));
+}
+.border-bottom{
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #245ceb 60%, 
+    #24ef50);
+    border-radius: 8px;
+}
+.border-bottom>div{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #245ceb 60%, 
+    #24ef50);
+}
+
+.card2:hover{
+    opacity: 1;
+}

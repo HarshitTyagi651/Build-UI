@@ -1,0 +1,27 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 530px;
+    height: 100%;
+  }
+  
+  .carousel img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 5s ease-in-out; /* Use your animationDuration */
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+    transform: translateX(0); /* Slide to center */
+  }
+  
+  .carousel img.inactive {
+    opacity: 0.7; /* Adjust opacity as needed */
+    transform: translateX(100%); /* Slide in from right */
+  }
+  
